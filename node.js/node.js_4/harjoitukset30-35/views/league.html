@@ -1,0 +1,30 @@
+<table>
+    <thead>
+        <tr>
+            <th>Joukkue</th>
+            <th>Kaupunki</th>
+            <th>Ottelut</th>
+            <th>Voitot</th>
+            <th>Tappiot</th>
+            <th>Tasapelit</th>
+            <th>Tehdyt maalit</th>
+            <th>Päästetyt maalit</th>
+            <th>Pisteet</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each stats}}
+        <tr>
+            <td>{{this.Nimi}}</td>
+            <td>{{this.Kaupunki}}</td>
+            <td>{{this.Ottelut}}</td>
+            <td>{{this.Voitot}}</td>
+            <td>{{this.Tappiot}}</td>
+            <td>{{this.Tasapelit}}</td>
+            <td>{{this.Tehdyt_maalit}}</td>
+            <td>{{this.Paastetyt_maalit}}</td>
+            <td>{{this.Pisteet}}</td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>

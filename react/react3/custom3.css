@@ -1,0 +1,25 @@
+#insert-form {
+  background-color: black;
+  padding: 30px;
+  border-radius: 20px;
+  width: 1000px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 2px 2px #ccc;
+}
+
+#insert-form p {
+  color: white;
+}
+
+#insert-form input[type="text"],
+#insert-form select {
+  background-color: white;
+}
+
+.show-element {
+  display: block;
+}
+
+.hide-element {
+  display: none;
+}

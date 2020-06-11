@@ -1,0 +1,42 @@
+<script>
+    $(function () {
+        $("a").click(function () {
+            // get team id from the target id
+            const teamId = event.target.id.substring(5);
+            // load players
+            $("#right").load("http://localhost:3000/teams/" + teamId);
+        });
+    })
+</script>
+
+<style>
+    .grid-container-sub {
+        display: grid;
+        grid-template-areas:
+            "left right";
+        grid-gap: 10px;
+        padding: 10px;
+    }
+
+    #left {
+        grid-area: left;
+        padding: 10px;
+    }
+
+    #right {
+        grid-area: right;
+        padding: 10px;
+    }
+</style>
+
+<div class="grid-container-sub">
+    <div id="left">
+        <h4>Joukkueet:</h4>
+        <ul>
+            {{#each teams}}
+            <li><a id="team-{{this.Id}}" href="#">{{this.Nimi}}</a> {{this.Kaupunki}}</li>
+            {{/each}}
+        </ul>
+    </div>
+    <div id="right"></div>
+</div>

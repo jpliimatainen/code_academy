@@ -1,0 +1,156 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "name": "Matti Meikäläinen",
+      "address": "Opistotie 2",
+      "zipCode": "70200",
+      "town": "Kuopio",
+      "phone": "040 123 4567",
+      "typeId": 1
+    },
+    {
+      "id": 3,
+      "name": "Olli Opiskelija",
+      "address": "Microkatu 1",
+      "zipCode": "70600",
+      "town": "Kuopio",
+      "phone": "050 111 2233",
+      "typeId": 3
+    },
+    {
+      "id": 4,
+      "name": "Foo Bar",
+      "address": "Torikatu 2",
+      "zipCode": "40100",
+      "town": "Jyväskylä",
+      "phone": "040 456 4567",
+      "typeId": 1
+    },
+    {
+      "id": 5,
+      "name": "Heikki Korhonen",
+      "address": "Asemakatu 23",
+      "zipCode": "40200",
+      "town": "Jyväskylä",
+      "phone": "050 456 3356",
+      "typeId": 3
+    },
+    {
+      "id": 6,
+      "name": "Liisa Makkonen",
+      "address": "Kaikukatu 21",
+      "zipCode": "00100",
+      "town": "Helsinki",
+      "phone": "040 267 0101",
+      "typeId": 2
+    },
+    {
+      "id": 7,
+      "name": "Reijo Mönkkönen",
+      "address": "Keskustie 2",
+      "zipCode": "00200",
+      "town": "Helsinki",
+      "phone": "040 246 1378",
+      "typeId": 1
+    },
+    {
+      "id": 9,
+      "name": "Laura Mattila",
+      "address": "Suksitie 19",
+      "zipCode": "20100",
+      "town": "Lahti",
+      "phone": "050 236 5678",
+      "typeId": 3
+    },
+    {
+      "name": "Lahtelainen",
+      "address": "mäkikatu 1",
+      "zipCode": "20300",
+      "town": "Lahti",
+      "phone": "111 222",
+      "typeId": 3,
+      "id": 11
+    },
+    {
+      "name": "Juha-Pekka",
+      "address": "Sammakkolammentie",
+      "zipCode": "70200",
+      "town": "Kuopio",
+      "phone": "111 234",
+      "typeId": 3,
+      "id": 12
+    },
+    {
+      "name": "Heikki Heikkinen",
+      "address": "Matokuja 2",
+      "zipCode": "20100",
+      "town": "Lahti",
+      "phone": "111",
+      "typeId": 2,
+      "id": 15
+    },
+    {
+      "name": "Lahtelainen",
+      "address": "kaikukatu 2",
+      "zipCode": "20100",
+      "town": "Lahti",
+      "phone": "111",
+      "typeId": 3,
+      "id": 16
+    },
+    {
+      "name": "Joku toinen",
+      "address": "mäkikatu",
+      "zipCode": "70200",
+      "town": "Kuopio",
+      "phone": "111",
+      "typeId": 2,
+      "id": 17
+    },
+    {
+      "name": "Heikki Heikkilä",
+      "address": "Samoilijantie",
+      "zipCode": "70200",
+      "town": "Kuopio",
+      "phone": "111",
+      "typeId": 2,
+      "id": 18
+    },
+    {
+      "name": "Matti Suomalainen",
+      "address": "Hiihtotie",
+      "zipCode": "20100",
+      "town": "Lahti",
+      "phone": "222",
+      "typeId": 2,
+      "id": 19
+    },
+    {
+      "name": "Juuba Jaaba",
+      "address": "Kaikukatu",
+      "zipCode": "20100",
+      "town": "Lahti",
+      "phone": "111",
+      "typeId": 2,
+      "id": 20
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "code": "AT1",
+      "description": "Asiakastyyppi 1"
+    },
+    {
+      "id": 2,
+      "code": "AT2",
+      "description": "Asiakastyyppi 2"
+    },
+    {
+      "id": 3,
+      "code": "AT3",
+      "description": "Asiakastyyppi 3"
+    }
+  ]
+}

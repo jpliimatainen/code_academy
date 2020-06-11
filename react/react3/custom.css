@@ -1,0 +1,30 @@
+input.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+}
+
+.error-message p {
+  margin-bottom: 0;
+}
+
+.button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.button.reset {
+  margin-left: 25px;
+  background-color: #444;
+}
+
+.checbox {
+  margin-bottom: 20px;
+}

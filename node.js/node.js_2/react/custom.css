@@ -1,0 +1,72 @@
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+div.error {
+    margin-bottom: 25px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 110%;
+    color: red;
+}
+
+input.error,
+input.error:active,
+input.error:focus,
+select.error {
+    border: 2px solid red;
+}
+
+#insert-button {
+    margin-bottom: 40px;
+}
+
+#insert-button a {
+    background-color: grey;
+    padding: 15px 20px;
+    color: white;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+#insert-button a:hover {
+    background-color: black;
+}
+
+#insert-form .button {
+    margin-top: 15px;
+    margin-right: 15px;
+}
+
+#insert-form #cancel-button {
+    background-color: grey;
+}
+
+.info-text {
+    margin-bottom: 25px;
+    background-color: green;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 115%;
+}
+
+.delete-button,
+.delete-button:active,
+.delete-button:focus {
+    background-color: red;
+    padding: 7px 10px;
+}
+
+.edit-button {
+    padding: 7px 10px;
+}
+
+.delete-button:hover,
+.edit-button:hover {
+    background-color: black;
+}

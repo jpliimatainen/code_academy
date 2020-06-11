@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/Redmond/jquery-ui.css">
+    <!--<link rel="stylesheet" href="./css/custom.css">-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+        integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
+
+    <title>Welcome to football pages!</title>
+    <script>
+        $(function () {
+            // Ladataan div:n sisältö servolta
+            $("#right").load("http://localhost:3000/events");
+        })
+    </script>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "left middle right"
+                "footer footer footer";
+            grid-gap: 10px;
+            padding: 10px;
+        }
+
+        #header {
+            grid-area: header;
+            padding: 10px;
+            text-align: right;
+            background-color: cyan;
+        }
+
+        #left {
+            grid-area: left;
+            padding: 10px;
+            text-align: left;
+            background-color: cyan;
+        }
+
+        #left li {
+            list-style: none;
+        }
+
+        #middle {
+            grid-area: middle;
+            padding: 10px;
+            text-align: left;
+            background-color: cyan;
+        }
+
+        #right {
+            grid-area: right;
+            padding: 10px;
+            text-align: left;
+            background-color: cyan;
+        }
+
+        #footer {
+            grid-area: footer;
+            padding: 10px;
+            text-align: center;
+            background-color: cyan;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="header">
+            <span>Welcome to football pages!</span>
+            <select name="fb-options">
+                {{#each options}}
+                <option value="{{this.id}}">{{this.text}}</option>
+                {{/each}}
+            </select>
+        </div>
+        <div id="left">
+            <ul>
+                {{#each links}}
+                <li>
+                    <a href="{{this.target}}">{{this.text}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+        <div id="middle">
+            <p>{{middleText}}</p>
+        </div>
+        <div id="right"></div>
+        <div id="footer">
+            <p>{{footerText}}</p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "header header header"
+  "left middle right"
+  "footer footer footer";
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+#header {
+  grid-area: header;
+  padding: 10px;
+  text-align: right;
+  background-color: cyan;
+}
+
+#left {
+  grid-area: left;
+  padding: 10px;
+  text-align: center;
+  background-color: cyan;
+}
+
+#middle {
+  grid-area: middle;
+  padding: 10px;
+  text-align: left;
+  background-color: cyan;
+}
+
+#right {
+  grid-area: right;
+  padding: 10px;
+  text-align: left;
+  background-color: cyan;
+}
+
+#footer {
+  grid-area: footer;
+  padding: 10px;
+  text-align: center;
+  background-color: cyan;
+}
